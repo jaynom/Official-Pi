@@ -35,7 +35,6 @@ void mysql_connect (void)
 int main(int argc, char **argv)
 {
 mysql_connect();
-
-mysql_query(mysql1, "INSERT INTO SM (id, kW, kWh, PQ) VALUES (4, 10, 10, 10)");
+mysql_query(mysql1, ("INSERT INTO SM (id, kW, kWh, PQ) VALUES" (4, 10, 10, 10)")");
         return 0;
 }
