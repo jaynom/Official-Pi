@@ -4,10 +4,11 @@
 
 #include <mysql/mysql.h>
 
-#define DATABASE_IP "localhost"
 #define DATABASE_NAME  "SM"
 #define DATABASE_USERNAME "root"
 #define DATABASE_PASSWORD "kopkaffe"
+#include <string>
+#include <vector>
 MYSQL *mysql1;
 
 void mysql_connect (void)
@@ -22,7 +23,7 @@ void mysql_connect (void)
      }
 
      //Connect to the database
-     if(mysql_real_connect(mysql1, DATABASE_IP, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, 0, NULL, 0) == NULL)
+     if(mysql_real_connect(mysql1, "localhost", DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, 0, NULL, 0) == NULL)
      {
       fprintf(stderr, "%s\n", mysql_error(mysql1));
      }
@@ -36,6 +37,16 @@ void mysql_connect (void)
 int main(int argc, char **argv)
 {
 mysql_connect();
-mysql_query(mysql1, ("INSERT INTO SM (id, kW, kWh, PQ) VALUES" (4, 10, 10, 10)")");
-        return 0;
+    int id=3;
+    int kW=400;
+    int kWh=300;
+    int PQ=100;
+char q[1024];
+for (int i=0;i<3;i++)
+{
+    sprintf(q,"INSERT INTO SM(id,kW) VALUES(%d,%d)",id,kW);
+
+    mysql_query(mysql1, q);
+}
+return 0;
 }
