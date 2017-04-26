@@ -4,6 +4,7 @@
 
 #include <mysql/mysql.h>
 
+#define DATABASE_IP "localhost"
 #define DATABASE_NAME  "SM"
 #define DATABASE_USERNAME "root"
 #define DATABASE_PASSWORD "kopkaffe"
@@ -21,7 +22,7 @@ void mysql_connect (void)
      }
 
      //Connect to the database
-     if(mysql_real_connect(mysql1, "localhost", DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, 0, NULL, 0) == NULL)
+     if(mysql_real_connect(mysql1, DATABASE_IP, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, 0, NULL, 0) == NULL)
      {
       fprintf(stderr, "%s\n", mysql_error(mysql1));
      }
