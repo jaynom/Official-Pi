@@ -81,13 +81,14 @@ while(1)
 //printf("rcv\n");
     RF24NetworkHeader header;
     network.peek(header);
-
+//
+int totSize = sizeof(network.peek(header))+sizeof(dat);
    // uint32_t dat = 0;
     switch(header.type){
       // Display the incoming millis() values from the sensor nodes
       case 'M': network.read(header,&dat,sizeof(dat));
-                cout << "Package received from ID: " << header.from_node << " / Effect: " << dat.Effect << " / Effect Hour: "  << dat.Effect_Hour << " / Voltage: "  << dat.Voltage << " / Ampere: " << dat.Ampere << " / Time Stamp: " << dat.Time_Stamp << endl;
-sprintf(q,"INSERT INTO SM(id,effect,effectHour,voltage,ampere,timeStamp) VALUES(%d,%d,%d,%d,%d,%d)",header.from_node,dat.Effect,dat.Effect_Hour,dat.Voltage,dat.Ampere,dat.Time_Stamp);
+                cout << "Package received from ID: " << uint16_t (header.from_node) << " / Effect: " << dat.Effect << " / Effect Hour: "  << dat.Effect_Hour << " / Voltage: "  << dat.Voltage << " / Ampere: " << dat.Ampere << " / Time Stamp: " << dat.Time_Stamp << " / Package Size: " << totSize << " bits." << endl;
+sprintf(q,"INSERT INTO SM(id,effect,effectHour,voltage,ampere,timeStamp,totalStr) VALUES(%d,%d,%d,%d,%d,%d,%d)",header.from_node,dat.Effect,dat.Effect_Hour,dat.Voltage,dat.Ampere,dat.Time_Stamp,totSize);
     mysql_query(mysql1, q);
  break;
       default:  network.read(header,0,0);
