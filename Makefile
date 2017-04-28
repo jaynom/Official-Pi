@@ -30,7 +30,7 @@ CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=$(ARCH) -mtune=arm1176jzf-s -st
 endif
 
 # define all programs
-PROGRAMS = PI_pro
+PROGRAMS = Pi_pro
 SOURCES = ${PROGRAMS:=.cpp}
 
 all: ${PROGRAMS}
