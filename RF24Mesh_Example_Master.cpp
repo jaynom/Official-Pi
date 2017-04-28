@@ -10,7 +10,6 @@
 #include <mysql/mysql.h>
 #include <string>
 #include <vector>
-
 #define DATABASE_NAME  "SM"
 #define DATABASE_USERNAME "root"
 #define DATABASE_PASSWORD "kopkaffe"
@@ -25,15 +24,16 @@ RF24Mesh mesh(radio,network);
 
 struct dat {
   //Effect in watt
- uint32_t Effect;
+ uint16_t Effect;
   //Effect in watt hours
- uint32_t Effect_Hour;
+ uint16_t Effect_Hour;
   //Voltage in milli volt
- uint32_t Voltage;
+ uint16_t Voltage;
   //Amp in amp
- uint32_t Ampere;
+ uint16_t Ampere;
   //Time in ms
- uint32_t Time_Stamp;
+ uint16_t Time_Stamp;
+uint8_t id2;
 }dat;
 
 void mysql_connect (void)
@@ -60,6 +60,12 @@ void mysql_connect (void)
 
 int main(int argc, char** argv) {
 mysql_connect();
+
+//
+
+
+
+//
 char q[1024];
   // Set the nodeID to 0 for the master node
   mesh.setNodeID(0);
@@ -78,6 +84,7 @@ while(1)
   mesh.DHCP();
   // Check for incoming data from the sensors
   while(network.available()){
+
 //printf("rcv\n");
     RF24NetworkHeader header;
     network.peek(header);
@@ -87,8 +94,24 @@ int totSize = sizeof(network.peek(header))+sizeof(dat);
     switch(header.type){
       // Display the incoming millis() values from the sensor nodes
       case 'M': network.read(header,&dat,sizeof(dat));
-                cout << "Package received from ID: " << uint16_t (header.from_node) << " / Effect: " << dat.Effect << " / Effect Hour: "  << dat.Effect_Hour << " / Voltage: "  << dat.Voltage << " / Ampere: " << dat.Ampere << " / Time Stamp: " << dat.Time_Stamp << " / Package Size: " << totSize << " bits." << endl;
-sprintf(q,"INSERT INTO SM(id,effect,effectHour,voltage,ampere,timeStamp,totalStr) VALUES(%d,%d,%d,%d,%d,%d,%d)",header.from_node,dat.Effect,dat.Effect_Hour,dat.Voltage,dat.Ampere,dat.Time_Stamp,totSize);
+                cout << "Package received from ID: " << dat.id2 << " / Effect: " << dat.Effect << " / Effect Hour: "  << dat.Effect_Hour << " / Voltage: "  << dat.Voltage << " / Ampere: " << dat.Ampere << " / Time Stamp: " << dat.Time_Stamp << " / Package Size: " << totSize << " bits." << endl;
+
+    for(int i=0; i<mesh.addrListTop; i++){
+cout << "NodeID: ";
+printf("%u",mesh.addrList[i].nodeID);
+cout << endl;
+cout << " RF24Network Address: ";
+cout << oct << (mesh.addrList[i].address) << endl;
+cout << "Headernodeid" << oct << header.from_node << endl;
+//	if (mesh.addrList[i].address == header.from_node){
+//
+//    };
+}
+
+
+
+
+sprintf(q,"INSERT INTO SM(id,effect,effectHour,voltage,ampere,timeStamp,totalStr) VALUES(%d,%d,%d,%d,%d,%d,%d)",dat.id2,dat.Effect,dat.Effect_Hour,dat.Voltage,dat.Ampere,dat.Time_Stamp,totSize);
     mysql_query(mysql1, q);
  break;
       default:  network.read(header,0,0);
