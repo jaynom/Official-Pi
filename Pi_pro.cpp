@@ -37,7 +37,7 @@ uint8_t id2;
 uint8_t check;
 }dat;
 
-struct data_types enc_xor(int ID, struct  data_types ukrypt) {
+struct dat enc_xor(int ID, struct dat ukrypt) {
   uint16_t key_array[] = {123, 124, 125, 126, 127, 128, 129, 130, 131};
   ukrypt.Effect ^= key_array[ID];
   ukrypt.Effect_Hour ^= key_array[ID];
