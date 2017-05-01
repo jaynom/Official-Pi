@@ -37,6 +37,17 @@ uint8_t id2;
 uint8_t check;
 }dat;
 
+struct data_types enc_xor(int ID, struct  data_types ukrypt) {
+  uint16_t key_array[] = {123, 124, 125, 126, 127, 128, 129, 130, 131};
+  ukrypt.Effect ^= key_array[ID];
+  ukrypt.Effect_Hour ^= key_array[ID];
+  ukrypt.Voltage ^= key_array[ID];
+  ukrypt.Ampere ^= key_array[ID];
+  ukrypt.Time_Stamp ^= key_array[ID];
+  ukrypt.check ^= key_array[ID];
+  return ukrypt;
+}
+
 void mysql_connect (void)
 {
      //initialize MYSQL object for connections
@@ -95,7 +106,7 @@ int totSize = sizeof(network.peek(header))+sizeof(dat);
     switch(header.type){
       // Display the incoming millis() values from the sensor nodes
       case 'M': network.read(header,&dat,sizeof(dat));
-
+dat=enc_xor(dat.id2,dat);
     for(int i=0; i<mesh.addrListTop && dat.check==29; i++){
 
 cout << " RF24Network Address: ";
