@@ -81,10 +81,6 @@ mysql_connect();
 char q[1024];
   // Set the nodeID to 0 for the master node
   mesh.setNodeID(0);
- mesh.setStaticAddress(1,01);
-mesh.setStaticAddress(2,011);
-mesh.setStaticAddress(3,012);
-mesh.setStaticAddress(4,0111); 
 // Connect to the mesh
   printf("start\n");
   mesh.begin();
@@ -113,8 +109,9 @@ int totSize = sizeof(network.peek(header))+sizeof(dat);
 	//dat=enc_xor(dat.id2,dat);
    	for(int i=0; i<mesh.addrListTop && dat.check==29; i++){
 	cout << " RF24Network Address: ";
-	//cout << oct << (mesh.addrList[i].address) << endl;
-        }
+	cout << oct << (mesh.addrList[i].address) << endl;
+        cout << dec;
+	}
 	if (dat.id2 <= 3){
 		sprintf(q,"INSERT INTO SM1(id,effect,effectHour,voltage,ampere,timeStamp,totalStr) VALUES(%d,%d,%d,%d,%d,%d,%d)",dat.id2,dat.Effect,dat.Effect_Hour,dat.Voltage,dat.Ampere,dat.Time_Stamp,totSize);
 		mysql_query(mysql1, q);
