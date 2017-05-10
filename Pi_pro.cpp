@@ -70,6 +70,16 @@ void mysql_connect (void)
      }
 }
 
+void printstruct(struct data_types ptvl){
+  cout << "Effect:      " << ptvl.Effect << endl;
+  cout << "Effect Hour: " << ptvl.Effect_Hour << endl;
+  cout << "Voltage:     " << ptvl.Voltage << endl;
+  cout << "Ampere:      " << ptvl.Ampere << endl;
+  cout << "Time Stamp:  " << ptvl.Time_Stamp << endl;
+  cout << "ID:          " << ptvl.id << endl;
+  cout << "Check:       " << ptvl.check << endl;
+}
+
 int main(int argc, char** argv) {
 mysql_connect();
 
