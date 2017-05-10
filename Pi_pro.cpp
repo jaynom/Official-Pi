@@ -37,6 +37,16 @@ struct dat {
         uint8_t check;
 } dat;
 
+void printstruct(struct dat ptst){
+  cout << "Effect:      " << ptst.Effect << endl;
+  cout << "Effect Hour: " << ptst.Effect_Hour << endl;
+  cout << "Voltage:     " << ptst.Voltage << endl;
+  cout << "Ampere:      " << ptst.Ampere << endl;
+  cout << "Time Stamp:  " << ptst.Time_Stamp << endl;
+  cout << "ID:          " << ptst.id2 << endl;
+  cout << "Check:       " << ptst.Check << endl;
+}
+
 struct dat enc_xor(int ID, struct dat ukrypt) {
         uint16_t key_array[] = {123, 124, 125, 126, 127, 128, 129, 130, 131};
         ukrypt.Effect ^= key_array[ID-1];
