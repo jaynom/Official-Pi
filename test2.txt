@@ -1,0 +1,121 @@
+Database connection successful.
+start
+================ SPI Configuration ================
+CSN Pin  	 = CE0 (PI Hardware Driven)
+CE Pin  	 = Custom GPIO22
+Clock Speed	 = 8 Mhz
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0xccccccccc3 0xcccccccc3c
+RX_ADDR_P2-5	 = 0x33 0xce 0x3e 0xe3
+TX_ADDR		 = 0xcccccc3ecc
+RX_PW_P0-6	 = 0x20 0x20 0x20 0x20 0x20 0x20
+EN_AA		 = 0x3e
+EN_RXADDR	 = 0x3f
+RF_CH		 = 0x61
+RF_SETUP	 = 0x07
+CONFIG		 = 0x0f
+DYNPD/FEATURE	 = 0x3f 0x04
+Data Rate	 = 1MBPS
+Model		 = nRF24L01+
+CRC Length	 = 16 bits
+PA Power	 = PA_MAX
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.
+Package received from ID:  / Effect: 1 / Effect Hour: 1 / Voltage: 1 / Ampere: 1 / Time Stamp: 1 / Package Size: 14 bits.

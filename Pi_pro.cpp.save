@@ -106,7 +106,7 @@ int totSize = sizeof(network.peek(header))+sizeof(dat);
     switch(header.type){
       // Display the incoming millis() values from the sensor nodes
       case 'M': network.read(header,&dat,sizeof(dat));
-//dat=enc_xor(dat.id2,dat);
+	dat=enc_xor(dat.id2,dat);
     for(int i=0; i<mesh.addrListTop && dat.check==29; i++){
 
 cout << " RF24Network Address: ";
